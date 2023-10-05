@@ -1,0 +1,12 @@
+.page {
+  .backButton {
+    background-color: #f47813;
+    height: 30px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+}
+@import "./../landingPage.module.scss";

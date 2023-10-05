@@ -1,0 +1,186 @@
+.addRecipe {
+  margin-left: 10vw;
+  margin-top: 5vh;
+  width: 60vw;
+  .formContainer {
+    box-shadow: (
+      2px 2px 10px lightgray,
+      -2px 2px 10px lightgray,
+      2px -2px 10px lightgray
+    );
+    padding: 4vh;
+    padding-bottom: 10vw;
+    height: 50vh;
+  }
+  .backButton {
+    position: relative;
+    left: -5vw;
+    margin-bottom: 1vw;
+    background-color: #f47813;
+    height: 30px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+  .formComponents {
+    margin-top: 1.5vh;
+    .formFieldTitle {
+      display: inline-block;
+      width: 10vw;
+      margin-left: 1vw;
+    }
+    input {
+      margin-left: 5vw;
+      width: 30vw;
+      box-shadow: (
+        2px 2px 2px lightgray,
+        -2px 2px 2px lightgray,
+        2px -2px 2px lightgray
+      );
+      height: 25px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .addIngredientDiv {
+      display: inline-block;
+      margin-left: 11vw;
+      input {
+        width: 10vw;
+        margin-right: 8vw;
+      }
+      span {
+        cursor: pointer;
+        box-shadow: (
+          2px 2px 2px lightgray,
+          -2px 2px 2px lightgray,
+          2px -2px 2px lightgray
+        );
+        padding: 8px;
+      }
+    }
+    .errors {
+      font-size: 12px;
+      margin-left: 18vw;
+      color: red;
+    }
+  }
+  button {
+    width: 160px;
+    float: right;
+    margin-right: 9vw;
+    margin-top: 1.5vw;
+    height: 35px;
+    background-image: linear-gradient(to right, lightgray, lightblue);
+    border-radius: 20px;
+    border: 1px solid gray;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .addRecipe {
+    width: 85vw;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    .backButton {
+      position: relative;
+      left: 2vw;
+      margin-bottom: 2vw;
+      background-color: #f47813;
+      height: 25px;
+      width: 35px;
+    }
+    .formComponents {
+      font-size: 10px;
+      margin-top: 3vw;
+      .formFieldTitle {
+        display: block;
+        width: 55vw;
+        margin-left: 1vw;
+      }
+      input {
+        margin-top: 1vh;
+        width: 74vw;
+        box-shadow: (
+          2px 2px 2px lightgray,
+          -2px 2px 2px lightgray,
+          2px -2px 2px lightgray
+        );
+        height: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .addIngredientDiv {
+        input {
+          width: 30vw;
+        }
+      }
+      .errors {
+        font-size: 12px;
+        margin-left: 14vw;
+        color: red;
+      }
+    }
+    button {
+      width: 90px;
+      float: right;
+      margin-right: 1vw;
+      margin-top: 6vh;
+      height: 35px;
+      font-size: 10px;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .addRecipe {
+    width: 85vw;
+    margin-left: 2vw;
+    margin-top: 5vh;
+    .formContainer {
+      height: 60vh;
+      padding: 2vh;
+    }
+    .backButton {
+      position: relative;
+      left: 2vw;
+      margin-bottom: 2vw;
+      background-color: #f47813;
+      height: 25px;
+      width: 35px;
+    }
+    .formComponents {
+      font-size: 10px;
+      margin-top: 7vw;
+      .formFieldTitle {
+        display: block;
+        width: 50vw;
+        margin-left: 1vw;
+      }
+      input {
+        margin-top: 1vh;
+        width: 74vw;
+        box-shadow: (
+          2px 2px 2px lightgray,
+          -2px 2px 2px lightgray,
+          2px -2px 2px lightgray
+        );
+        height: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .errors {
+        font-size: 12px;
+        margin-left: 14vw;
+        color: red;
+      }
+    }
+    button {
+      width: 60px;
+      float: right;
+      margin-right: 2vw;
+      margin-top: 6vh;
+      height: 30px;
+      font-size: 10px;
+    }
+  }
+}

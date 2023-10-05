@@ -1,0 +1,282 @@
+.landingPage {
+  margin: 7.5vh;
+  background-color: white;
+  height: 85vh;
+  border-radius: 25px;
+  padding: 5vw;
+  .topPanel {
+    display: flex;
+    justify-content: space-between;
+    .leftHalf {
+      display: flex;
+      width: 40%;
+      justify-content: space-around;
+      font-size: 11px;
+      .mainHeader {
+        font-size: 17px !important;
+        margin-top: -4px;
+        span {
+          margin-top: 2px;
+          font-size: 17px;
+        }
+      }
+    }
+    .rightHalf {
+      display: flex;
+      width: 17%;
+      justify-content: space-around;
+      font-size: 11px;
+      .rightHalfIcons {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.page {
+  margin-top: 2vw;
+  margin-left: 2vw;
+  .header {
+    font-size: 21px;
+    display: flex;
+    justify-content: space-between;
+    .instructions {
+      font-size: 11px;
+    }
+    .filterAndAdd {
+      font-size: 15px;
+      width: 10vw;
+      margin-right: 2vw;
+      display: flex;
+      justify-content: space-between;
+      span {
+        cursor: pointer;
+      }
+      .deleteIcon {
+        font-size: 19px;
+      }
+      .plusIcon {
+        margin-top: -9px;
+        font-size: 24px;
+      }
+      div:nth-of-type(1) {
+        background-color: #f47813;
+        height: 25px;
+        width: 100px;
+        margin-left: 20px;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-top: 5px;
+        font-size: 10px;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+  .body {
+    display: flex;
+    margin-top: 3vh;
+    flex-wrap: wrap;
+    height: 50vh;
+    overflow-y: auto;
+    border: 1px solid white;
+    box-shadow: (
+      2px 2px 10px lightgray,
+      -2px 2px 10px lightgray,
+      2px -2px 10px lightgray
+    );
+    .recipeList {
+      width: 10vw;
+      height: 10vw;
+      background-color: lightgray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 25px;
+      padding: 2vw;
+      margin-left: 4vw;
+      margin-right: 4vw;
+      margin-top: 1.5vw;
+      margin-bottom: 1.5vw;
+      div:nth-child(1) {
+        font-size: 20px;
+        position: relative;
+        left: 3.5vw;
+        top: -1vw;
+      }
+      div:nth-child(2) {
+        font-size: 40px;
+      }
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(188, 167, 167);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(188, 167, 167);
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .page {
+    .body {
+      .recipeList {
+        div:nth-child(1) {
+          position: relative;
+          top: 0.5vh;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .landingPage {
+    margin: 4vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    height: 90vh;
+    .topPanel {
+      display: block !important;
+      .leftHalf {
+        font-size: 7px;
+        :nth-child(1) {
+          font-size: 10px;
+        }
+        width: 90%;
+      }
+      .rightHalf {
+        font-size: 7px;
+        width: 35%;
+        margin-top: 2vw;
+        float: right;
+        .rightHalfIcons {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .page {
+    margin-top: 10vw;
+    .header {
+      font-size: 13px;
+      display: block;
+      .instructions {
+        font-size: 7px;
+      }
+      .filterAndAdd {
+        font-size: 9px;
+        margin-top: 2vh;
+        margin-left: 60vw;
+      }
+    }
+    .body {
+      height: 52vh;
+      .recipeList {
+        width: 15vw;
+        height: 15vw;
+        padding: 2vh;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        margin-top: 1.5vh;
+        margin-bottom: 1.5vh;
+        div:nth-child(1) {
+          font-size: 10px;
+          position: relative;
+          left: 3.5vh;
+          top: -1vh;
+        }
+        div:nth-child(2) {
+          font-size: 20px;
+        }
+        p {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .landingPage {
+    margin: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    height: 90vh;
+    .topPanel {
+      display: block !important;
+      .leftHalf {
+        font-size: 7px;
+        :nth-child(1) {
+          font-size: 10px;
+        }
+        width: 90%;
+      }
+      .rightHalf {
+        font-size: 7px;
+        width: 35%;
+        margin-top: 2vw;
+        float: right;
+        .rightHalfIcons {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .page {
+    margin-top: 10vw;
+    .header {
+      font-size: 13px;
+      display: block;
+      .instructions {
+        font-size: 7px;
+      }
+      .filterAndAdd {
+        font-size: 9px;
+        margin-top: 2vh;
+        margin-left: 30vw;
+      }
+    }
+    .body {
+      height: 60vh;
+      .recipeList {
+        width: 28vw;
+        height: 28vw;
+        padding: 2vh;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        margin-top: 1.5vh;
+        margin-bottom: 1.5vh;
+        div:nth-child(1) {
+          font-size: 10px;
+          position: relative;
+          left: 3.5vh;
+          top: -0.5vh;
+        }
+        div:nth-child(2) {
+          font-size: 20px;
+        }
+        p {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}
